@@ -50,6 +50,7 @@
   .cw-sm { display:inline; }
   .cw-tbl { grid-template-columns:minmax(0,1fr) auto !important; }
   .cw-trace-num { grid-column:1 / -1 !important; margin-top:3px; }
+  .cw-chrome { border-color:transparent !important; padding-left:8px !important; padding-right:8px !important; }
   .cw-hero-panel { display:none; }
   .cw-trace-exp, .cw-trace-foot { display:none; }
 }
