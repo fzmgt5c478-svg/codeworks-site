@@ -91,7 +91,7 @@
           <div style="padding:14px 18px;border-bottom:1px solid var(--band-rule);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:0 16px;align-items:baseline">
             <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--band-head)">rate_differential</span>
             <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--band-ink);font-variant-numeric:tabular-nums;overflow-wrap:anywhere">172.60273972602739726</span>
-            <span style="font-family:'IBM Plex Mono',monospace;grid-column:1 / -1;margin-top:5px;font-size:11px;line-height:1.5;color:var(--band-ink)">(7.00% &minus; 4.00%) on 1,00,000 for 21 days / 365</span>
+            <span class="cw-trace-exp" style="font-family:'IBM Plex Mono',monospace;grid-column:1 / -1;margin-top:5px;font-size:11px;line-height:1.5;color:var(--band-ink)">(7.00% &minus; 4.00%) on 1,00,000 for 21 days / 365</span>
           </div>
           <div style="padding:14px 18px;border-bottom:1px solid var(--band-rule);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:0 16px;align-items:baseline">
             <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--band-head)">rounding</span>
@@ -104,22 +104,11 @@
             <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--band-head)">funding_split &nbsp;STATE &middot; 1%</span>
             <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--green-key);font-variant-numeric:tabular-nums">57.53</span>
           </div>
-          <div style="padding:12px 18px;display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline;justify-content:space-between">
+          <div class="cw-trace-foot" style="padding:12px 18px;display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline;justify-content:space-between">
             <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--band-ink)">GOI + STATE reconcile to the claim</span>
             <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--green-key)">&#8377;172.60</span>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div style="background:var(--band-2);border-top:1px solid var(--band-rule)">
-    <div style="max-width:1440px;margin:0 auto;padding:clamp(24px,2.6vw,36px) clamp(20px,4vw,64px) clamp(10px,1.2vw,18px)">
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:0;border-top:1px solid var(--band-rule-2);border-left:1px solid var(--band-rule-2)">
-        <div style="border-right:1px solid var(--band-rule-2);border-bottom:1px solid var(--band-rule-2);padding:20px 22px 22px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--band-accent)">Runs in your perimeter</span><p style="margin:9px 0 0;font-size:15px;line-height:1.5;color:var(--band-ink)">Private cloud or on&#8209;premise, with one isolated database per institution.</p></div>
-        <div style="border-right:1px solid var(--band-rule-2);border-bottom:1px solid var(--band-rule-2);padding:20px 22px 22px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--band-accent)">It never moves money</span><p style="margin:9px 0 0;font-size:15px;line-height:1.5;color:var(--band-ink)">We compute, decide, record and instruct. Your payment systems execute.</p></div>
-        <div style="border-right:1px solid var(--band-rule-2);border-bottom:1px solid var(--band-rule-2);padding:20px 22px 22px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--band-accent)">Alongside your stack</span><p style="margin:9px 0 0;font-size:15px;line-height:1.5;color:var(--band-ink)">Plugs in beside your LOS and core banking. No rip&#8209;and&#8209;replace.</p></div>
-        <div style="border-right:1px solid var(--band-rule-2);border-bottom:1px solid var(--band-rule-2);padding:20px 22px 22px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--band-accent)">Model-agnostic, PII masked</span><p style="margin:9px 0 0;font-size:15px;line-height:1.5;color:var(--band-ink)">Your choice of LLM, with personal data masked before processing.</p></div>
       </div>
     </div>
   </div>
@@ -158,6 +147,17 @@
           <span style="font-size:14.5px;line-height:1.5;color:var(--ink-2)">Double-entry subledger that balances daily</span>
         </div>
         <p style="margin:20px 0 0"><a href="samanvaya.html" style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--green);border-bottom:1px solid var(--green-key);padding-bottom:4px">Samanvaya &rarr;</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:var(--band-2);border-top:1px solid var(--band-rule)">
+    <div style="max-width:1440px;margin:0 auto;padding:clamp(24px,2.6vw,36px) clamp(20px,4vw,64px) clamp(10px,1.2vw,18px)">
+      <div class="cw-facts" style="border-top:1px solid var(--band-rule-2);border-left:1px solid var(--band-rule-2)">
+        <div style="border-right:1px solid var(--band-rule-2);border-bottom:1px solid var(--band-rule-2);padding:20px 22px 22px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--band-accent)">Runs in your perimeter</span><p style="margin:9px 0 0;font-size:15px;line-height:1.5;color:var(--band-ink)">Private cloud or on&#8209;premise, with one isolated database per institution.</p></div>
+        <div style="border-right:1px solid var(--band-rule-2);border-bottom:1px solid var(--band-rule-2);padding:20px 22px 22px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--band-accent)">It never moves money</span><p style="margin:9px 0 0;font-size:15px;line-height:1.5;color:var(--band-ink)">We compute, decide, record and instruct. Your payment systems execute.</p></div>
+        <div style="border-right:1px solid var(--band-rule-2);border-bottom:1px solid var(--band-rule-2);padding:20px 22px 22px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--band-accent)">Alongside your stack</span><p style="margin:9px 0 0;font-size:15px;line-height:1.5;color:var(--band-ink)">Plugs in beside your LOS and core banking. No rip&#8209;and&#8209;replace.</p></div>
+        <div style="border-right:1px solid var(--band-rule-2);border-bottom:1px solid var(--band-rule-2);padding:20px 22px 22px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--band-accent)">Model-agnostic, PII masked</span><p style="margin:9px 0 0;font-size:15px;line-height:1.5;color:var(--band-ink)">Your choice of LLM, with personal data masked before processing.</p></div>
       </div>
     </div>
   </div>
