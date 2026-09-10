@@ -36,6 +36,7 @@
           <a href="security.html" style="font-size:14.5px;font-weight:500;color:var(--ink-2)">Security</a>
           <a href="company.html" style="font-size:14.5px;font-weight:500;color:var(--ink-2)">Company</a>
           <a href="contact.html" style="font-size:14.5px;font-weight:500;color:var(--ink-2)">Contact</a>
+          <a href="contact.html" style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--btn-ink);background:var(--btn-bg);padding:11px 18px" class="hv-4">Book a workshop</a>
         </div>
       
       <button type="button" onclick="cwToggleTheme()" style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-3);background:none;border:1px solid var(--rule);padding:11px 13px;cursor:pointer;flex:0 0 auto" class="hv-1"><span id="cw-theme-label">Dark</span></button>
@@ -70,8 +71,56 @@
         <span style="width:30px;height:1px;background:var(--blue-key)"></span>
         <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--band-ink)">Software for banks and NBFCs</span>
       </div>
-      <h1 style="margin:22px 0 0;font-size:clamp(36px,5vw,72px);line-height:1.02;font-weight:600;letter-spacing:-0.035em;color:var(--band-head);max-width:20ch;text-wrap:balance">Institutional AI. Deterministic Governance.</h1>
-      <p style="margin:22px 0 0;font-size:clamp(16.5px,1.3vw,20px);line-height:1.55;color:var(--band-ink);max-width:62ch;text-wrap:pretty"><strong style="font-weight:600;color:var(--band-head)">The software banks and NBFCs use to appraise loans, claim subsidies and settle commissions.</strong> AI agents do the reading, the investigation and the drafting. A separate rules engine does every calculation and shows its working. Your officer signs the decision. All of it runs inside your own perimeter.</p>
+      <div style="margin-top:22px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(24px,3.4vw,60px);align-items:end">
+        <div>
+          <h1 style="margin:0;font-size:clamp(34px,4.4vw,62px);line-height:1.02;font-weight:600;letter-spacing:-0.034em;color:var(--band-head);max-width:18ch;text-wrap:balance">Institutional AI. Deterministic Governance.</h1>
+          <p style="margin:20px 0 0;font-size:clamp(16.5px,1.3vw,19px);line-height:1.55;color:var(--band-ink);max-width:56ch;text-wrap:pretty"><strong style="font-weight:600;color:var(--band-head)">The software banks and NBFCs use to appraise loans, claim subsidies and settle commissions.</strong> AI agents do the reading and the drafting. A separate rules engine does every calculation and shows its working. Your officer signs the decision.</p>
+          <div style="margin-top:clamp(24px,2.4vw,30px);display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px">
+            <a href="contact.html" style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--btn-on-blue-ink);background:var(--btn-on-blue-bg);padding:17px 28px" class="hv-3">Book a scoping workshop</a>
+            <a href="platform.html" style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--band-accent)">See how the engine works &rarr;</a>
+          </div>
+        </div>
+        <div style="background:var(--band-2);border:1px solid var(--band-rule-2)">
+          <div style="padding:12px 18px;border-bottom:1px solid var(--band-rule-2);display:flex;flex-wrap:wrap;gap:8px 16px;align-items:baseline;justify-content:space-between">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--band-accent)">SPECTRA &middot; claim computation</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--band-ink)">Illustrative</span>
+          </div>
+          <div style="padding:11px 18px;border-bottom:1px solid var(--band-rule-2)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--band-ink)">Loan a/c &bull;&bull;&bull;&bull;&bull;&bull;1001 &middot; &#8377;1,00,000 &middot; 21 days &middot; spread 3.00%</span>
+          </div>
+          <div style="padding:14px 18px;border-bottom:1px solid var(--band-rule);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:0 16px;align-items:baseline">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--band-head)">rate_differential</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--band-ink);font-variant-numeric:tabular-nums;overflow-wrap:anywhere">172.60273972602739726</span>
+            <span style="font-family:'IBM Plex Mono',monospace;grid-column:1 / -1;margin-top:5px;font-size:11px;line-height:1.5;color:var(--band-ink)">(7.00% &minus; 4.00%) on 1,00,000 for 21 days / 365</span>
+          </div>
+          <div style="padding:14px 18px;border-bottom:1px solid var(--band-rule);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:0 16px;align-items:baseline">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--band-head)">rounding</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:13.5px;color:var(--band-head);font-variant-numeric:tabular-nums">172.60</span>
+            <span style="font-family:'IBM Plex Mono',monospace;grid-column:1 / -1;margin-top:5px;font-size:11px;line-height:1.5;color:var(--band-ink)">round(HALF_UP, 0.01)</span>
+          </div>
+          <div style="padding:13px 18px 14px;border-bottom:1px solid var(--band-rule-2);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:7px 16px;align-items:baseline">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--band-head)">funding_split &nbsp;GOI &middot; 2%</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--green-key);font-variant-numeric:tabular-nums">115.07</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--band-head)">funding_split &nbsp;STATE &middot; 1%</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--green-key);font-variant-numeric:tabular-nums">57.53</span>
+          </div>
+          <div style="padding:12px 18px;display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline;justify-content:space-between">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--band-ink)">GOI + STATE reconcile to the claim</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--green-key)">&#8377;172.60</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:var(--band-2);border-top:1px solid var(--band-rule)">
+    <div style="max-width:1440px;margin:0 auto;padding:clamp(24px,2.6vw,36px) clamp(20px,4vw,64px) clamp(10px,1.2vw,18px)">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:0;border-top:1px solid var(--band-rule-2);border-left:1px solid var(--band-rule-2)">
+        <div style="border-right:1px solid var(--band-rule-2);border-bottom:1px solid var(--band-rule-2);padding:20px 22px 22px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--band-accent)">Runs in your perimeter</span><p style="margin:9px 0 0;font-size:15px;line-height:1.5;color:var(--band-ink)">Private cloud or on&#8209;premise, with one isolated database per institution.</p></div>
+        <div style="border-right:1px solid var(--band-rule-2);border-bottom:1px solid var(--band-rule-2);padding:20px 22px 22px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--band-accent)">It never moves money</span><p style="margin:9px 0 0;font-size:15px;line-height:1.5;color:var(--band-ink)">We compute, decide, record and instruct. Your payment systems execute.</p></div>
+        <div style="border-right:1px solid var(--band-rule-2);border-bottom:1px solid var(--band-rule-2);padding:20px 22px 22px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--band-accent)">Alongside your stack</span><p style="margin:9px 0 0;font-size:15px;line-height:1.5;color:var(--band-ink)">Plugs in beside your LOS and core banking. No rip&#8209;and&#8209;replace.</p></div>
+        <div style="border-right:1px solid var(--band-rule-2);border-bottom:1px solid var(--band-rule-2);padding:20px 22px 22px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--band-accent)">Model-agnostic, PII masked</span><p style="margin:9px 0 0;font-size:15px;line-height:1.5;color:var(--band-ink)">Your choice of LLM, with personal data masked before processing.</p></div>
+      </div>
     </div>
   </div>
 
