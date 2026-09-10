@@ -42,17 +42,30 @@
 .cw-menu-btn { display:none; }
 .cw-sent { font-size:14px; color:var(--green); display:none; }
 .cw-sent.is-shown { display:inline; }
-.cw-facts { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:0; }
 .cw-sm { display:none; }
 @media (max-width:899px) {
-  .cw-facts { grid-template-columns:repeat(2,minmax(0,1fr)); }
   .cw-hide-sm { display:none; }
   .cw-sm { display:inline; }
   .cw-tbl { grid-template-columns:minmax(0,1fr) auto !important; }
   .cw-trace-num { grid-column:1 / -1 !important; margin-top:3px; }
   .cw-chrome { border-color:transparent !important; padding-left:8px !important; padding-right:8px !important; }
-  .cw-hero-panel { display:none; }
-  .cw-trace-exp, .cw-trace-foot { display:none; }
+  /* The panel is the only evidence on the page — keep it on a phone. Its wide
+     columns already collapse via .cw-tbl / .cw-hide-sm / .cw-trace-num. */
+  .cw-hero-panel { margin-top:26px; }
+  /* .cw-trace-foot is deliberately kept: it carries the reconciliation line,
+     which is the point of the panel. (It never hid anyway — those elements
+     set display:flex inline, which beats a stylesheet rule.) */
+  .cw-trace-exp { display:none; }
+  /* Content tables stack into blocks rather than scrolling sideways row by row.
+     Cells carry inline padding/border, so these need !important to win. */
+  .cw-stack { min-width:0 !important; display:block; }
+  .cw-stack thead, .cw-stack colgroup, .cw-stack col { display:none; }
+  .cw-stack tbody, .cw-stack tr, .cw-stack th, .cw-stack td { display:block; width:auto; }
+  .cw-stack tr { border-top:1px solid var(--rule); padding:13px 0 15px; }
+  .cw-stack th, .cw-stack td {
+    padding:2px 0 !important; border:0 !important;
+    text-align:left !important; white-space:normal !important;
+  }
 }
 @media (max-width:899px) {
   .cw-nav { order:3; flex:1 1 100%; padding-top:4px; display:none; }
