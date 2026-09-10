@@ -43,9 +43,13 @@
 .cw-sent { font-size:14px; color:var(--green); display:none; }
 .cw-sent.is-shown { display:inline; }
 .cw-facts { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:0; }
+.cw-sm { display:none; }
 @media (max-width:899px) {
   .cw-facts { grid-template-columns:repeat(2,minmax(0,1fr)); }
   .cw-hide-sm { display:none; }
+  .cw-sm { display:inline; }
+  .cw-tbl { grid-template-columns:minmax(0,1fr) auto !important; }
+  .cw-trace-num { grid-column:1 / -1 !important; margin-top:3px; }
   .cw-trace-exp, .cw-trace-foot { display:none; }
 }
 @media (max-width:899px) {
