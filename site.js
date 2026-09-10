@@ -28,14 +28,15 @@
     var d = new FormData(e.target), out = document.getElementById('cw-sent');
     function g(k) { return (d.get(k) || '').toString().trim(); }
     function say(t) { if (out) { out.textContent = t; out.classList.add('is-shown'); } }
-    var payload = { name: g('name'), institution: g('institution'), email: g('email'), role: g('role'), intent: g('intent'), context: g('context') };
+    var payload = { name: g('name'), institution: g('institution'), email: g('email'), role: g('role'), intent: g('intent'), context: g('context'),
+      consent: !!d.get('consent'), consentText: 'Reply to my enquiry, per the privacy policy', consentAt: new Date().toISOString() };
     if (ENDPOINT) {
       fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
         .then(function (r) { say(r.ok ? 'Thank you — we will reply within one working day.' : 'Something went wrong. Please write to sales@codeworks.ind.in.'); })
         .catch(function () { say('Something went wrong. Please write to sales@codeworks.ind.in.'); });
       return false;
     }
-    var lines = ['Name: ' + payload.name, 'Institution: ' + payload.institution, 'Work email: ' + payload.email, 'Role: ' + payload.role, 'Need: ' + payload.intent, '', payload.context].join('\n');
+    var lines = ['Name: ' + payload.name, 'Institution: ' + payload.institution, 'Work email: ' + payload.email, 'Role: ' + payload.role, 'Need: ' + payload.intent, '', payload.context, '', 'Consent given ' + payload.consentAt + ' — ' + payload.consentText].join('\n');
     window.location.href = 'mailto:sales@codeworks.ind.in?subject=' + encodeURIComponent('Enquiry: ' + (payload.intent || 'Codeworks') + (payload.institution ? ' — ' + payload.institution : '')) + '&body=' + encodeURIComponent(lines);
     say('Opening your mail app — or write to sales@codeworks.ind.in.');
     return false;
